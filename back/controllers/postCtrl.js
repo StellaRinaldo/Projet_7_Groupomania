@@ -46,8 +46,8 @@ module.exports.createPost = async (req, res) => {
   const newPost = new postModel({
     posterId: req.body.posterId,
     message: req.body.message,
-    imageUrl: `${req.protocol}://${req.get("host")}/images/${
-      req.file.filename}`, //req.file !== null ? "./uploads/posts/" + fileName : "",
+    imageUrl: req.file ? `${req.protocol}://${req.get("host")}/images/${
+      req.file.filename}` : null,
     likers: [],
     dislikers: [],
     comments: [],
