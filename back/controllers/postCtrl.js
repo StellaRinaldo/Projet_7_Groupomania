@@ -1,13 +1,10 @@
 const postModel = require("../models/Post");
 const Post = require("../models/Post");
-//const User = require("../models/User");
-//const { uploadErrors } = require("../utils/errors.utils");
+
 const pkg = require("mongoose");
-//import { uploadErrors } from "../utils/errors.utils.js";
+
 const { isValidObjectId } = pkg;
 const fs = require("fs");
-//const { promisify } = require("util");
-//const pipeline = promisify(require("stream").pipeline);
 
 module.exports.getAllPosts = (req, res) => {
   Post.find((err, docs) => {
@@ -17,54 +14,21 @@ module.exports.getAllPosts = (req, res) => {
 };
 
 module.exports.createPost = async (req, res) => {
-  /*let fileName;
-
-  if (req.file !== null) {
-    try {
-      if (
-        req.file.detectedMimeType != "image/jpg" &&
-        req.file.detectedMimeType != "image/png" &&
-        req.file.detectedMimeType != "image/jpeg"
-      )
-        throw Error("invalid file");
-
-      if (req.file.size > 500000) throw Error("max size");
-    } catch (err) {
-      const errors = uploadErrors(err);
-      return res.status(201).json({ errors });
-    }
-    fileName = req.body.posterId + Date.now() + ".jpg";
-
-    await pipeline(
-      req.file.stream,
-      fs.createWriteStream(
-        `${__dirname}/../client/public/uploads/posts/${fileName}`
-      )
-    );
-  }*/
-
   const newPost = new postModel({
     posterId: req.body.posterId,
     message: req.body.message,
-    imageUrl: req.file ? `${req.protocol}://${req.get("host")}/images/${
-      req.file.filename}` : null,
+    imageUrl: req.file
+      ? `${req.protocol}://${req.get("host")}/images/${req.file.filename}`
+      : null,
     likers: [],
     dislikers: [],
     comments: [],
   });
-  
 
   newPost
     .save()
     .then(() => res.status(201).json({ message: "Post enregistré !" }))
     .catch(res.status(400));
-
-  /*try {
-    const post = await newPost.save();
-    return res.status(201).json(post);
-  } catch (err) {
-    return res.status(400).send(err);
-  }*/
 };
 
 module.exports.updatePost = (req, res) => {
@@ -99,19 +63,18 @@ module.exports.deletePost = (req, res) => {
 module.exports.likePost = async (req, res) => {
   if (!isValidObjectId(req.params.id))
     return res.status(400).send("ID unknown : " + req.params.id);
-  
+
   try {
     await Post.findByIdAndUpdate(
       req.params.id,
       {
         $addToSet: { likers: req.body.id },
       },
-      
+
       { new: true }
     )
       .then((data) => res.send(data))
       .catch((err) => res.status(500).send({ message: err }));
-      
   } catch (err) {
     return res.status(400);
   }
@@ -131,7 +94,6 @@ module.exports.unlikePost = async (req, res) => {
     )
       .then((data) => res.send(data))
       .catch((err) => res.status(500).send({ message: err }));
-
   } catch (err) {
     return res.status(400);
   }
@@ -153,7 +115,6 @@ module.exports.dislikePost = async (req, res) => {
     )
       .then((data) => res.send(data))
       .catch((err) => res.status(500).send({ message: err }));
-
   } catch (err) {
     return res.status(400);
   }
@@ -173,8 +134,6 @@ module.exports.undislikePost = async (req, res) => {
     )
       .then((data) => res.send(data))
       .catch((err) => res.status(500).send({ message: err }));
-
-  
   } catch (err) {
     return res.status(400);
   }

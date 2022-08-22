@@ -1,9 +1,7 @@
 const router = require('express').Router();
 const postCtrl = require('../controllers/postCtrl');
 const multerConfig = require("../middleware/multer-config");
-//const admin = require("../middleware/admin")
-//const multer = require("multer");
-//const upload = multer();
+
 
 router.get('/', postCtrl.getAllPosts);
 router.post('/', multerConfig, postCtrl.createPost);

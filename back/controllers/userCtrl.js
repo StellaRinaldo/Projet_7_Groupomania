@@ -25,23 +25,11 @@ module.exports.signUp = async (req, res) => {
       .save()
       .then(() => res.status(201).json({ message: "Utilisateur crée !" }))
       .catch((user) => {
-        //const errors = signUpErrors(err)
+        
         res.status(200).send({user})
-      } )//json({ error })); //ici erreurs de saisi ou champs vides par exemple
+      } )
   })
-  .catch((error) => res.status(500).json({ error })); //ici erreur serveur
-
-  /*console.log("body", req.body)//il renvoi bien le contenu du formulaire rempli...
-  const {pseudo, email, password} = req.body
-
-  try {
-    const user = await User.create({ pseudo, email, password });
-    res.status(201).json({ user: user._id});
-  }
-  catch(err) {
-    const errors = signUpErrors(err);
-    res.status(200).send({ errors })
-  }*/
+  .catch((error) => res.status(500).json({ error })); 
 }
 
 module.exports.login = async (req, res) => {
