@@ -5,8 +5,8 @@ import CreatePost from "../components/Post/CreatePost";
 import Feeds from "../components/Feeds";
 import Login from "../components/Log/Login";
 import Events from "../components/Events";
-
 import Navbar from "../components/Navbar";
+import Scroll from "../components/Scroll";
 
 const Home = () => {
   const uid = useContext(UidContext);
@@ -25,6 +25,7 @@ const Home = () => {
             <div className="main-center">
             <CreatePost /> <Feeds />
             </div>
+            <Scroll />
           </main>
         </>
       ) : (
