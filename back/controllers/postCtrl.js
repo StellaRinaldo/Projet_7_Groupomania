@@ -108,9 +108,14 @@ module.exports.dislikePost = async (req, res) => {
   try {
     await Post.findByIdAndUpdate(
       req.params.id,
+      
       {
         $addToSet: { dislikers: req.body.id },
       },
+
+      /*{
+        $pull: { likers: req.body.id },
+      },*/
       { new: true }
     )
       .then((data) => res.send(data))
