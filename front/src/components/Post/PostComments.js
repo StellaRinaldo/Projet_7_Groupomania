@@ -58,12 +58,13 @@ const CardComments = ({ post }) => {
           <i className="fa-solid fa-circle-user user-profil pic-client fa-2x"></i>
 
           <form onSubmit={handleComment} className="comment-form">
-            <input
+            <textarea
               type="text"
               name="text"
               onChange={(e) => setText(e.target.value)}
               value={text}
               placeholder="Laisser un commentaire"
+              className="message"
             />
             <br />
             <input type="submit" value="Envoyer" className="send-btn" />

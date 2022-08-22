@@ -13,7 +13,10 @@
   
   .comment-form {
     margin-left: 10px;
+    width: 100%;
   }
+
+ 
   
   .post-footer, .comment-section, .like-container {
     display: flex;

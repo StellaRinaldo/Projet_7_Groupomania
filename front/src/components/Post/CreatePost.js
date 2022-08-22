@@ -56,7 +56,7 @@ const NewPostForm = () => {
 
               <textarea
                 name="message"
-                id="message"
+                className="message"
                 placeholder="Ecrivez quelque chose"
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
