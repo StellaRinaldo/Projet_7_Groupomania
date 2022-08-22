@@ -1,0 +1,108 @@
+/*BUTTONS*/
+
+.submit-btn:hover {
+    background-color: #fd2d01;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color:  #fd2d01;
+    cursor: pointer;
+  }
+  
+  .send-btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FFD7D7;
+    color:  #fd2d01;
+  }
+  
+  .send-btn:hover {
+    background-color: #FFD7D7;
+    color:  #fd2d01;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .select-img {
+    cursor: pointer;
+  }
+  
+  .pic-icon {
+    max-width: 30px;
+    position: absolute;
+    cursor: pointer;
+  
+  }
+  
+  #file-upload {
+    opacity: 0;
+    max-width: 30px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+  
+  }
+  
+  .post-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  
+  .send-post:hover {
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #4E5166;
+    color:  white;
+    cursor: pointer;
+  }
+  
+  .like:hover, .dislike:hover {
+    cursor: pointer;
+  }
+  
+  
+  .pen:hover, .delete:hover, .cancel:hover {
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  #edit-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .editPost, .delete-post {
+    margin-right: 10px;
+    color:#4E5166;
+  }
+  
+  .likeActive {
+    color:#4E5166;
+  }
+  
+  
+  
+  /*BUTTONS*/

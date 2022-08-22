@@ -1,0 +1,43 @@
+/*HOME*/
+
+
+.login-bar-home {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .login-bar-list-home {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  #logout {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  #logout:hover {
+    color:#fd2d01;
+  }
+  
+  .welcome-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #homePage {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  

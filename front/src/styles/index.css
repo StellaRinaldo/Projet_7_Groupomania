@@ -1,0 +1,30 @@
+
+/*
+Primaire : #FD2D01
+● Secondaire : #FFD7D7
+● Tertiaire : #4E5166
+*/
+
+/*PARAMETRES A APPLIQUER SU L'ENSEMBLE DES PAGES*/
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.error, .delete, .dislikeActive {
+  color: #fd2d01;
+}
+
+.success {
+  color: green;
+}
+
+

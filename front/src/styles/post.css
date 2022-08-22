@@ -1,0 +1,75 @@
+/*CREATE POST*/
+
+.post-form {
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 10px rgba(78, 81, 102, 0.3);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
+  }
+  
+  #form-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  #message {
+    border-radius: 30px;
+    width: 80%;
+    padding: 10px
+  }
+  
+  
+  /*POST*/
+  
+  .posts-feeds {
+    padding: 0px;
+  }
+  
+  .feeds-container {
+    width: 100%;
+  }
+  
+  .post-container {
+    margin-top: 30px;
+  }
+  
+  .pic-client {
+    color:#4E5166;
+  }
+  
+  .pic-other {
+    color: grey;
+  }
+  
+  .post {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 7px 10px rgba(78, 81, 102, 0.3);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .post-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time {
+    font-style: italic;
+    font-size: small;
+    padding: 5px;
+  }
+  
+  .post-pic {
+    max-width: 100%;
+  }
+  
+  
