@@ -18,6 +18,11 @@ const Navbar = () => {
             <h3 className="welcome">Bienvenue {userData.pseudo}</h3>
           </div>
 
+        <div className="nav-icon">
+        <i className="fa-solid fa-bell"><span className="number">0</span></i>
+        <i className="fa-solid fa-message"><span className="number">0</span></i>
+        </div>
+
           <ul className="login-bar-list-home">
             <Logout />
           </ul>

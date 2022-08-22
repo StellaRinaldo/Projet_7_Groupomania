@@ -22,6 +22,12 @@
   
   /*POST*/
   
+  .main-center {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .posts-feeds {
     padding: 0px;
   }
@@ -35,11 +41,11 @@
   }
   
   .pic-client {
-    color:#4E5166;
+    color: #fd2d01;
   }
   
   .pic-other {
-    color: grey;
+    color: #4E5166;
   }
   
   .post {

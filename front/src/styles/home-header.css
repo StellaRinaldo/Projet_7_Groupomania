@@ -13,6 +13,27 @@
     justify-content:space-between;
     align-items: center;
   }
+
+  .nav-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-icon i {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    color: #4E5166;
+  }
+
+  .nav-icon i:hover {
+    color: white;
+    padding: 10px;
+    background-color: #4E5166;
+    border-radius: 30px;
+  }
   
   #logout {
     display: flex;
@@ -26,6 +47,7 @@
   .welcome-user {
     display: flex;
     align-items: center;
+    color: #fd2d01;
   }
   
   .welcome {
@@ -35,9 +57,11 @@
   }
   
   #homePage {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
   }
   
