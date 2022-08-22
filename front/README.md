@@ -44,7 +44,9 @@ redux-thunk 2.4.1,
 "cd front" + "npm start"
 
 
+Home page capture
 
+![page d'accueil](../../../CaptureHome.JPG)
 
 
 
