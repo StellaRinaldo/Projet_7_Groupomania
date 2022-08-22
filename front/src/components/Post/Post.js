@@ -56,7 +56,7 @@ const Post = ({ post }) => {
             </div>
             <div id="edit-post">
               {isUpdated === false && <p>{post.message}</p>}
-              {userData._id === post.posterId && (
+              {(userData._id === post.posterId || userData.role) && (
                 <div className="button-container">
                   <div onClick={() => setIsUpdated(!isUpdated)}>
                     <i className="fa-solid fa-pen-to-square editPost"></i>
@@ -64,6 +64,7 @@ const Post = ({ post }) => {
                   <DeleteCard id={post._id}/>
                 </div>
               )}
+               
             </div>
             {isUpdated && (
               <div className="update-post">
