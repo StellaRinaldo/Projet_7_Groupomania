@@ -79,9 +79,9 @@ const Post = ({ post }) => {
                 </div>
               </div>
             )}
-            {post.imageUrl && (
+            {post.imageUrl ? (
               <img src={post.imageUrl} alt="post-pic" className="post-pic" />
-            )}
+            ): null}
 
             <div className="post-footer post-header">
               <div className="comment-section">
