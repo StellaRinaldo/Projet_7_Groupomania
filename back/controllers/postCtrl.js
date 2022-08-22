@@ -106,6 +106,7 @@ module.exports.likePost = async (req, res) => {
       {
         $addToSet: { likers: req.body.id },
       },
+      
       { new: true }
     )
       .then((data) => res.send(data))
