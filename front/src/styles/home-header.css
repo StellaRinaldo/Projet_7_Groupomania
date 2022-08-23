@@ -1,8 +1,8 @@
 /*HOME*/
 
 
-.login-bar-home {
-    width: 90%;
+ .login-bar-home {
+    width: 1500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,8 +20,8 @@
   }
 
   .nav-icon i {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 10px;
     background-color: white;
     cursor: pointer;
@@ -39,6 +39,10 @@
     display: flex;
     cursor: pointer;
   }
+
+  .logout-icon {
+    display: none;
+  }
   
   #logout:hover {
     color:#fd2d01;
@@ -50,18 +54,77 @@
     color: #fd2d01;
   }
   
-  .welcome {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
   #homePage {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
   
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+      width: 100%;
+    }
+
+    #homePage {
+
+      flex-direction:column;
+      align-items: center;
+      margin-right: 0px;
+      margin-left: 80px;
+      
+    }
+
+    #logout {
+      margin-right: 20px;
+    }
+    
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+.logo-left {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.nav-icon i {
+  padding: 0px;
+}
+
+.nav-icon i:hover {
+  padding: 0px;
+  background-color: white;
+  color:#4E5166
+}
+
+.welcome-user {
+  display: none;
+}
+
+#logout {
+  display: none;
+}
+
+.logout-icon {
+  display: inline;
+}
+
+.login-bar-list-home {
+  margin-right: 15px;
+  padding-left: 0px;
+}
+
+#homePage {
+  flex-direction:column;
+ margin-left: 5px;
+  width: 97%;
+
+
+}
+
+  }

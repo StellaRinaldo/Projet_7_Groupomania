@@ -1,4 +1,4 @@
-/*CREATE POST*/
+/***********CREATE POST***********/
 
 .post-form {
     padding: 20px;
@@ -19,13 +19,13 @@
     padding: 10px
   }
   
-  
-  /*POST*/
+  /***********POST*************/
   
   .main-center {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 250px;
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 300px;
   }
 
   .posts-feeds {
@@ -78,4 +78,21 @@
     max-width: 100%;
   }
   
+  @media screen and (min-width: 768px) and (max-width: 992px) {
   
+  .main-center {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  
+  }
+
+  @media screen and (max-width: 767px) {
+  
+    .main-center {
+      margin-right: 0px;
+      margin-left: 0px;
+      width: 100%;
+    }
+  }

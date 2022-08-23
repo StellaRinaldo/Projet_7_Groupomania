@@ -15,7 +15,7 @@ const Navbar = () => {
           <img className="logo-left" src="/logo-little.png" alt="logo" />
           <div className="welcome-user">
             <i className="fa-solid fa-circle-user userlog user-profil fa-2x"></i>
-            <h3 className="welcome">Bienvenue {userData.pseudo}</h3>
+            <h3 className="welcome">Bienvenue <span className="pseudo-log">{userData.pseudo}</span></h3>
           </div>
 
         <div className="nav-icon">

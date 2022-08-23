@@ -12,6 +12,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   margin: 0px;
+
 }
 
 #back-top {
@@ -27,7 +28,6 @@ body {
   scroll-behavior: smooth;
   color: #FD2D01;
 }
-
 
 
 .events-bloc {
@@ -60,11 +60,6 @@ body {
   font-weight: 700;
 }
 
-input {
-  padding: 5px;
-  border-radius: 30px;
-}
-
 .error, .delete, .dislikeActive {
   color: #fd2d01;
 }
@@ -73,9 +68,24 @@ input {
   color: green;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
-/*MEDIA QUERIES*/
 
-@media screen and (min-width: 993px) and (max-width: 1400px) {
-
+  .events-bloc {
+    width: 50%;
+  }
 }
+
+@media screen and (max-width: 767px) {
+
+  .current-page {
+    font-size: 1em;
+  }
+
+  .events-bloc {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+

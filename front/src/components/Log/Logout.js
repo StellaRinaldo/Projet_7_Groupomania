@@ -22,9 +22,12 @@ const Logout = () => {
   };
 
   return (
+    <>
+    <i className="fa-solid fa-arrow-right-from-bracket logout-icon"></i>
     <li id="logout" onClick={logout}>
       LOGOUT
     </li>
+    </>
   );
 };
 
