@@ -17,7 +17,6 @@ const Navbar = () => {
             <i className="fa-solid fa-circle-user userlog user-profil fa-2x"></i>
             <h3 className="welcome">Bienvenue <span className="pseudo-log">{userData.pseudo}</span></h3>
           </div>
-
         <div className="nav-icon">
         <i className="fa-solid fa-bell"><span className="number">0</span></i>
         <i className="fa-solid fa-message"><span className="number">0</span></i>

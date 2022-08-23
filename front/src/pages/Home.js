@@ -4,7 +4,7 @@ import { UidContext } from "../components/AppContext";
 import CreatePost from "../components/Post/CreatePost";
 import Feeds from "../components/Feeds";
 import Login from "../components/Log/Login";
-import Events from "../components/Events";
+//import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Scroll from "../components/Scroll";
 
@@ -21,7 +21,7 @@ const Home = () => {
             <Navbar />
           </header>
           <main id="homePage">
-            <Events />
+            
             <div className="main-center">
             <CreatePost /> <Feeds />
             </div>

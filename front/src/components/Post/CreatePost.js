@@ -48,6 +48,8 @@ const NewPostForm = () => {
         <i className="fas fa-spinner fa-pulse"></i>
       ) : (
         <>
+          <h3 className="pseudo-log-tablet">Bienvenue {userData.pseudo}</h3>
+
           <div className="data"></div>
 
           <div className="post-form">

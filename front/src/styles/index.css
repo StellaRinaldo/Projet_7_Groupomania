@@ -30,36 +30,6 @@ body {
 }
 
 
-.events-bloc {
-  width: 20%;
-  margin-top: 30px;
-  text-align: center;
-}
-
-.events-bloc h2 {
-  color: #fd2d01;
-}
-
-.event-card {
-  border-radius: 30px;
-  padding: 10px;
-  margin-bottom: 40px;
-  box-shadow: 0px 7px 10px rgba(78, 81, 102, 0.3);
-  -webkit-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
-  -moz-box-shadow: 0px 7px 10px 0px rgba(78, 81, 102, 0.3);
-  cursor: pointer;
-}
-
-.event-card p {
-  margin: 0px;
-}
-
-.event-card:hover {
-  background-color: #FFD7D7;
-  color: #fd2d01;
-  font-weight: 700;
-}
-
 .error, .delete, .dislikeActive {
   color: #fd2d01;
 }
@@ -68,24 +38,6 @@ body {
   color: green;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
 
-
-  .events-bloc {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-
-  .current-page {
-    font-size: 1em;
-  }
-
-  .events-bloc {
-    width: 90%;
-    margin: auto;
-  }
-}
 
 

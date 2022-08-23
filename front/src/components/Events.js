@@ -1,6 +1,6 @@
 import React from "react";
 
-const Events = () => {
+/*const Events = () => {
   return (
     <>
       <div className="events-bloc">
@@ -25,4 +25,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Events;*/
